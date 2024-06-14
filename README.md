@@ -144,12 +144,12 @@ And ExtendTableColumn also implements the below features
 Element plus table column attributes can be set directly, an additional attribute named option is defined with follwing fields.
 And please also note min-width and align can be set directly to override the result evaluated by ExtendTableColumn.
 
-| Field            | Default | Description                           |
-| ---------------- | ------- | ------------------------------------- |
-| widthPerChar     | 10      | Refer to ' min width evaluation'      |
-| widthBase        | 16      | Refer to ' min width evaluation'      |
-| suppressColWidth | false   | Set to true to not evaluate min width |
-| suppressAlign    | false   | Set to true to not evaluate align     |
+| Field            | Default | Description                                                  |
+| ---------------- | ------- | ------------------------------------------------------------ |
+| widthPerChar     | 10      | The width of one character. Refer to ' min width evaluation' |
+| widthBase        | 16      | The base width of column.Refer to ' min width evaluation'    |
+| suppressColWidth | false   | Set to true to not evaluate min width                        |
+| suppressAlign    | false   | Set to true to not evaluate align                            |
 
 ### min width evaluation
 
