@@ -1,0 +1,54 @@
+{
+  "name": "element-pivot",
+  "version": "0.0.3",
+  "main": "./dist/element-pivot.umd.js",
+  "module": "./dist/element-pivot.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist//element-pivot.mjs",
+      "require": "./dist//element-pivot.umd.js"
+    }
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.5",
+    "mttk-vue-wrap": "^0.2.6",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.0",
+    "vite": "^5.2.8",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-plugin-style-import": "^2.0.0",
+    "vue-tsc": "^2.0.11"
+  }
+}
