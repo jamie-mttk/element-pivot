@@ -1,5 +1,7 @@
 # Element Pivot
 
+[中文说明](https://github.com/jamie-mttk/element-pivot/blob/master/README_CN.md)
+
 ## Brief
 
 Element Plus does not provide a pivot table, so here it is.
