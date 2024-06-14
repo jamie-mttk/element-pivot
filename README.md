@@ -159,11 +159,11 @@ It is hard to calculate the width of an text to displayed in screen. Below is an
 
 2. Calcuate the text length.
 
+```sh
 Length1=str.length
-
 Length2=new TextEncoder().encode(str)
-
 TextLength=(Length1+Length2)/2
+```
 
 This is a compromise since some characters such as Chinese character may consume more space than English character
 
